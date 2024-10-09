@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".SecondActivity">
+
+    <TextView
+        android:id="@+id/text_Welcome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Welcome to My App"
+        android:layout_centerHorizontal="true"
+        android:textSize="24sp"
+        android:textStyle="bold"/>
+
+    <ImageView
+        android:id="@+id/gambar2"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_below="@+id/text_Welcome"
+        android:layout_marginTop="16dp"
+        android:src="@drawable/gambar1"/>
+
+    <EditText
+        android:id="@+id/edit_text_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/gambar2"
+        android:layout_marginTop="16dp"
+        android:hint="Enter your name"
+        android:minHeight="48dp" />
+
+    <Button
+        android:id="@+id/button_Submit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Submit"
+        android:backgroundTint="@color/blue"
+        android:layout_below="@+id/edit_text_id"
+        android:layout_marginTop="16dp"
+        android:layout_marginRight="10dp"/>
+
+    <Button
+        android:id="@+id/button_Cancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cancel"
+        android:backgroundTint="@color/blue"
+        android:layout_below="@+id/button_Submit"
+        android:layout_alignTop="@+id/button_Submit"
+        android:layout_alignBottom="@+id/button_Submit"
+        android:layout_toEndOf="@+id/button_Submit"/>
+</RelativeLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+<!--<?xml version="1.0" encoding="utf-8"?>-->
+<!--<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+<!--    xmlns:app="http://schemas.android.com/apk/res-auto"-->
+<!--    xmlns:tools="http://schemas.android.com/tools"-->
+<!--    android:id="@+id/main"-->
+<!--    android:orientation="vertical"-->
+<!--    android:padding="16dp"-->
+<!--    android:gravity="center_horizontal"-->
+<!--    android:background="@color/white"-->
+<!--    android:layout_width="match_parent"-->
+<!--    android:layout_height="match_parent"-->
+<!--    tools:context=".MainActivity">-->
+
+<!--    <ImageView-->
+<!--        android:id="@+id/gambar1"-->
+<!--        android:layout_width="100dp"-->
+<!--        android:layout_height="100dp"-->
+<!--        android:src="@drawable/gambar1"-->
+<!--        android:layout_marginTop="20dp"/>-->
+
+<!--    <TextView-->
+<!--        android:id="@+id/textNama"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginTop="10dp"-->
+<!--        android:layout_marginBottom="20dp"-->
+<!--        android:text="@string/nama"-->
+<!--        android:textAlignment="center"-->
+<!--        android:textSize="14sp"-->
+<!--        tools:ignore="TextSizeCheck" />-->
+
+<!--    <Button-->
+<!--        android:id="@+id/buttonKeluar"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginStart="50dp"-->
+<!--        android:layout_marginEnd="50dp"-->
+<!--        android:backgroundTint="@color/blue"-->
+<!--        android:text="Keluar"-->
+<!--        android:textSize="14sp"-->
+<!--        tools:ignore="TextSizeCheck" />-->
+<!--</LinearLayout>-->
